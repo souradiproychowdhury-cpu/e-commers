@@ -1,0 +1,28 @@
+{
+  "name": "forma-ecommerce",
+  "version": "1.0.0",
+  "description": "FORMA - Objects for Everyday Living full-stack e-commerce app",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "db:setup": "psql -U postgres -d forma -f db/schema.sql && psql -U postgres -d forma -f db/seed.sql"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "pg": "^8.23.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
